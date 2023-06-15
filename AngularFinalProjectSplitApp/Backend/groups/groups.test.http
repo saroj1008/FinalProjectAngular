@@ -1,0 +1,81 @@
+// theo token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4ZDEzODEyYzdhYmE2NTdjZDk1Y2EiLCJmdWxsbmFtZSI6IlRoZW8gU2FhZCIsImVtYWlsIjoidGhlb0BtaXUuZWR1IiwiaWF0IjoxNjg2Njg4MDY1fQ.otVQ9IbyEcizGq3aecJfgfwJKr5bWIVClxSDPcc_Bdw
+// asaad token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4Y2E5MzIwOGQxNjgyMDVlZTVjODQiLCJmdWxsbmFtZSI6IkFzYWFkIFNhYWQiLCJlbWFpbCI6ImFzYWFkQG1pdS5lZHUiLCJpYXQiOjE2ODY2ODc4OTR9.mDqiMQqlPKyHrzjPrCCeDB6GAyK0EfY7rM1ewImgiNk
+
+POST http://localhost:3000/groups
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4Y2E5MzIwOGQxNjgyMDVlZTVjODQiLCJmdWxsbmFtZSI6IkFzYWFkIFNhYWQiLCJlbWFpbCI6ImFzYWFkQG1pdS5lZHUiLCJpYXQiOjE2ODY2ODc4OTR9.mDqiMQqlPKyHrzjPrCCeDB6GAyK0EfY7rM1ewImgiNk
+
+{
+    "title": "Florida Trip"
+}
+###
+
+GET http://localhost:3000/groups
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4Y2E5MzIwOGQxNjgyMDVlZTVjODQiLCJmdWxsbmFtZSI6IkFzYWFkIFNhYWQiLCJlbWFpbCI6ImFzYWFkQG1pdS5lZHUiLCJpYXQiOjE2ODY2ODc4OTR9.mDqiMQqlPKyHrzjPrCCeDB6GAyK0EfY7rM1ewImgiNk
+
+###
+
+POST http://localhost:3000/groups/6488d0f512c7aba657cd95c7/members
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4Y2E5MzIwOGQxNjgyMDVlZTVjODQiLCJmdWxsbmFtZSI6IkFzYWFkIFNhYWQiLCJlbWFpbCI6ImFzYWFkQG1pdS5lZHUiLCJpYXQiOjE2ODY2ODc4OTR9.mDqiMQqlPKyHrzjPrCCeDB6GAyK0EfY7rM1ewImgiNk
+
+{
+    "email": "theo@miu.edu"
+}
+
+###
+GET http://localhost:3000/groups?pending=true
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4ZDEzODEyYzdhYmE2NTdjZDk1Y2EiLCJmdWxsbmFtZSI6IlRoZW8gU2FhZCIsImVtYWlsIjoidGhlb0BtaXUuZWR1IiwiaWF0IjoxNjg2Njg4MDY1fQ.otVQ9IbyEcizGq3aecJfgfwJKr5bWIVClxSDPcc_Bdw
+
+
+###
+GET http://localhost:3000/groups/6488d0f512c7aba657cd95c7/members/6488d13812c7aba657cd95ca
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4ZDEzODEyYzdhYmE2NTdjZDk1Y2EiLCJmdWxsbmFtZSI6IlRoZW8gU2FhZCIsImVtYWlsIjoidGhlb0BtaXUuZWR1IiwiaWF0IjoxNjg2Njg4MDY1fQ.otVQ9IbyEcizGq3aecJfgfwJKr5bWIVClxSDPcc_Bdw
+
+###
+GET http://localhost:3000/groups/6488d0f512c7aba657cd95c7/members/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4ZDEzODEyYzdhYmE2NTdjZDk1Y2EiLCJmdWxsbmFtZSI6IlRoZW8gU2FhZCIsImVtYWlsIjoidGhlb0BtaXUuZWR1IiwiaWF0IjoxNjg2Njg4MDY1fQ.otVQ9IbyEcizGq3aecJfgfwJKr5bWIVClxSDPcc_Bdw
+
+###
+POST http://localhost:3000/groups/6488d0f512c7aba657cd95c7/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4ZDEzODEyYzdhYmE2NTdjZDk1Y2EiLCJmdWxsbmFtZSI6IlRoZW8gU2FhZCIsImVtYWlsIjoidGhlb0BtaXUuZWR1IiwiaWF0IjoxNjg2Njg4MDY1fQ.otVQ9IbyEcizGq3aecJfgfwJKr5bWIVClxSDPcc_Bdw
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="title"
+
+Breakfast
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="description"
+
+Cafe at the beach
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="category"
+
+Food
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="amount"
+
+75
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="date"
+
+1686697814
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="receipt"; filename="receipt.jpg"
+Content-Type: image/jpeg
+
+< ./receipt.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+GET http://localhost:3000/groups/6488d0f512c7aba657cd95c7/transactions/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4ZDEzODEyYzdhYmE2NTdjZDk1Y2EiLCJmdWxsbmFtZSI6IlRoZW8gU2FhZCIsImVtYWlsIjoidGhlb0BtaXUuZWR1IiwiaWF0IjoxNjg2Njg4MDY1fQ.otVQ9IbyEcizGq3aecJfgfwJKr5bWIVClxSDPcc_Bdw
+
+###
+GET http://localhost:3000/groups/6488d0f512c7aba657cd95c7/transactions/6488fadcb96fc76ecdaa4ace
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg4ZDEzODEyYzdhYmE2NTdjZDk1Y2EiLCJmdWxsbmFtZSI6IlRoZW8gU2FhZCIsImVtYWlsIjoidGhlb0BtaXUuZWR1IiwiaWF0IjoxNjg2Njg4MDY1fQ.otVQ9IbyEcizGq3aecJfgfwJKr5bWIVClxSDPcc_Bdw
+
+
+###
+GET http://localhost:3000/receipts/08d7a23d0cf8d1d4fccad3ec7ecbdb46
